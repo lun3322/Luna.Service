@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ITimerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DemoService.cs" />
     <Compile Include="IDemoService.cs" />
+    <Compile Include="TimerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Luna.Service.Core\Luna.Service.Core.csproj">
