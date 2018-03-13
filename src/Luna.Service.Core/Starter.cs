@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Castle.Core.Logging;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
-using Castle.Windsor.Installer;
-using Luna.Service.Core.Dependency;
+using Luna.Service.Dependency;
 
-namespace Luna.Service.Core
+namespace Luna.Service
 {
     public class Starter : IDisposable
     {
@@ -22,7 +17,7 @@ namespace Luna.Service.Core
             Container.Register(
                 Classes.FromAssemblyInThisApplication(runnerType.Assembly)
                     .IncludeNonPublicTypes()
-                    .BasedOn<ISingletonDependency>()
+                    .BasedOn<ITransientDependency>()
                     .WithServiceAllInterfaces()
                     .If(type => !type.IsGenericTypeDefinition)
                     .WithService.Self()

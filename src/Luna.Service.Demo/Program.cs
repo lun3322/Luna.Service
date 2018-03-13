@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Castle.Core.Logging;
 using Castle.Facilities.Logging;
 using Castle.Services.Logging.NLogIntegration;
-using Luna.Service.Core;
 
 namespace Luna.Service.Demo
 {

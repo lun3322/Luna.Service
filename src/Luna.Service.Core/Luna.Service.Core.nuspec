@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>lun3322</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/lun3322/Luna.Service/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/lun3322/Luna.Service</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Luna.Service</description>
+    <tags>console service</tags>
+  </metadata>
+</package>

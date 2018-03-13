@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Luna.Service.App;
-using Luna.Service.Core;
 
 namespace Luna.Service.TopshelfDemo
 {

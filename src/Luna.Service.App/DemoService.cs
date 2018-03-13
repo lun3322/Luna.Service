@@ -1,6 +1,4 @@
-﻿using Luna.Service.Core;
-
-namespace Luna.Service.App
+﻿namespace Luna.Service.App
 {
     public class DemoService : LunaServiceBase, IDemoService
     {

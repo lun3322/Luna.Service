@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Castle.Core.Logging;
-using Luna.Service.Core.Dependency;
+﻿using Luna.Service.Dependency;
 
-namespace Luna.Service.Core
+namespace Luna.Service
 {
     public interface IRunner : ISingletonDependency
     {

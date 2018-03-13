@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Castle.Facilities.Logging;
 using Castle.Services.Logging.NLogIntegration;
-using Luna.Service.Core;
 using Topshelf;
 
 namespace Luna.Service.TopshelfDemo

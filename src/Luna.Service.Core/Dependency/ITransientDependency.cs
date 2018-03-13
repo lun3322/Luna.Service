@@ -1,4 +1,4 @@
-﻿namespace Luna.Service.Core.Dependency
+﻿namespace Luna.Service.Dependency
 {
     public interface ITransientDependency
     {

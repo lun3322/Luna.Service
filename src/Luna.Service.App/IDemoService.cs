@@ -1,4 +1,4 @@
-﻿using Luna.Service.Core.Application;
+﻿using Luna.Service.Application;
 
 namespace Luna.Service.App
 {
