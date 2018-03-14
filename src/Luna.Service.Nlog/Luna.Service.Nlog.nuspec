@@ -9,7 +9,12 @@
     <licenseUrl>https://github.com/lun3322/Luna.Service/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/lun3322/Luna.Service</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Luna.Service命令行服务</description>
-    <tags>console service</tags>
+    <description>Luna.Service使用Nlog作日志的配置文件和依赖</description>
+    <tags>Luna.Service Nlog</tags>
   </metadata>
+  <files>
+    <file src="config\readme.txt" target="readme.txt" />
+    <file src="config\NLog.config" target="content\NLog.config" />
+	<file src="config\Runner.cs.pp" target="content\Runner.cs.pp" />
+  </files>
 </package>
