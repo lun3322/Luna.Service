@@ -51,6 +51,10 @@
     <Compile Include="TimerService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Luna.Service.Model\Luna.Service.Model.csproj">
+      <Project>{2ea2e501-23e8-4f1d-b9e1-dd03b26f49da}</Project>
+      <Name>Luna.Service.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Luna.Service.Core\Luna.Service.Core.csproj">
       <Project>{59427009-883f-4e80-813c-5a1058810279}</Project>
       <Name>Luna.Service.Core</Name>

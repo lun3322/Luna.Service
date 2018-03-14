@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.1
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luna.Service.App", "src\Luna.Service.App\Luna.Service.App.csproj", "{A149469A-B16D-4573-9D53-EE6187B1132B}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luna.Service.TopshelfDemo", "src\Luna.Service.TopshelfDemo\Luna.Service.TopshelfDemo.csproj", "{0AD9EFB8-2411-4B27-8B6A-420BBDF64111}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luna.Service.Nlog", "src\Luna.Service.Nlog\Luna.Service.Nlog.csproj", "{E2C3E4ED-4C1E-45C9-94DD-58D47EC167A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luna.Service.Model", "Luna.Service.Model\Luna.Service.Model.csproj", "{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E2C3E4ED-4C1E-45C9-94DD-58D47EC167A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C3E4ED-4C1E-45C9-94DD-58D47EC167A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2C3E4ED-4C1E-45C9-94DD-58D47EC167A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{F6EFDA82-136D-4327-BE9C-B4F6C6628878} = {95E88E9E-A9DB-4711-BE7F-BC59399AFFE4}
 		{0AD9EFB8-2411-4B27-8B6A-420BBDF64111} = {95E88E9E-A9DB-4711-BE7F-BC59399AFFE4}
 		{E2C3E4ED-4C1E-45C9-94DD-58D47EC167A5} = {7644DAEA-1971-4AA1-AC1A-9EFDE6115670}
+		{2EA2E501-23E8-4F1D-B9E1-DD03B26F49DA} = {95E88E9E-A9DB-4711-BE7F-BC59399AFFE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F15317-2B6B-4E90-B201-733F66744488}

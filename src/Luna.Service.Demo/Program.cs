@@ -13,7 +13,12 @@ namespace Luna.Service.Demo
     {
         static void Main(string[] args)
         {
-            using (var starter = Starter.Create<Runner>())
+            var opt = new StarterOption
+            {
+                DisableAudit = true
+            };
+
+            using (var starter = Starter.Create<Runner>(opt))
             {
                 starter.Container.AddFacility<LoggingFacility>(f => f.LogUsing<NLogFactory>().WithConfig("NLog.config"));
 

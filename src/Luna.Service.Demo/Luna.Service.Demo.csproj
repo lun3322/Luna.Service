@@ -72,6 +72,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Luna.Service.Model\Luna.Service.Model.csproj">
+      <Project>{2ea2e501-23e8-4f1d-b9e1-dd03b26f49da}</Project>
+      <Name>Luna.Service.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Luna.Service.App\Luna.Service.App.csproj">
       <Project>{a149469a-b16d-4573-9d53-ee6187b1132b}</Project>
       <Name>Luna.Service.App</Name>
