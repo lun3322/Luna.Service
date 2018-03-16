@@ -23,7 +23,12 @@ namespace Luna.Service.Demo
             Logger.Info(message);
             var strModel = _demoService.GetDemo(new DemoModel("名字", 33));
             Logger.Info(strModel);
-            Logger.Info("ok");
+            Logger.Info("ffffffff");
+        }
+
+        public override void Stop()
+        {
+            Logger.Info("runner stop");
         }
     }
 }

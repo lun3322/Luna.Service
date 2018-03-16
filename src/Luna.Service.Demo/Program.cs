@@ -15,7 +15,7 @@ namespace Luna.Service.Demo
         {
             var opt = new StarterOption
             {
-                DisableAudit = true
+                DisableAudit = false
             };
 
             using (var starter = Starter.Create<Runner>(opt))
@@ -24,6 +24,8 @@ namespace Luna.Service.Demo
 
                 starter.Run();
             }
+
+            Console.WriteLine("ok");
         }
     }
 }

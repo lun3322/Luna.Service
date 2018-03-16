@@ -13,7 +13,7 @@ namespace Luna.Service
     public class Starter : IDisposable
     {
         public readonly WindsorContainer Container;
-        public ILogger Logger { get; set; }
+        private ILogger Logger { get; set; }
 
         private Starter(Type runnerType, StarterOption option)
         {
@@ -88,6 +88,7 @@ namespace Luna.Service
 
         public void Dispose()
         {
+            Container.Resolve<IRunner>().Stop();
             Container?.Dispose();
         }
     }

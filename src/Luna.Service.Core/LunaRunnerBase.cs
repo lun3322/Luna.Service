@@ -4,7 +4,7 @@ namespace Luna.Service
 {
     public abstract class LunaRunnerBase : IRunner
     {
-        public ILogger Logger { protected get; set; }
+        public ILogger Logger { get; set; }
 
         protected LunaRunnerBase()
         {
@@ -12,5 +12,10 @@ namespace Luna.Service
         }
 
         public abstract void Run();
+
+        public virtual void Stop()
+        {
+            
+        }
     }
 }
