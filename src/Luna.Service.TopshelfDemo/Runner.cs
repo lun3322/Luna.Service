@@ -19,6 +19,7 @@ namespace Luna.Service.TopshelfDemo
         public override void Run()
         {
             Logger.Info("runner.run");
+
             _timerService.Start();
         }
     }
