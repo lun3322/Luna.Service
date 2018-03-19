@@ -9,7 +9,7 @@ using (var starter = Starter.Create<Runner>())
 	starter.Run();
 }
 
-3.修改Runner类
+3.新增Runner类继承LunaRunnerBase
 
 注意: 项目要遵循aaa.bb.c命名规则.例如
 Demo.App        <- 应用程序入口

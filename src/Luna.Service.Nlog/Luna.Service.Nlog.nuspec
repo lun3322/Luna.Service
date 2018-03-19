@@ -15,6 +15,5 @@
   <files>
     <file src="config\readme.txt" target="readme.txt" />
     <file src="config\NLog.config" target="content\NLog.config" />
-	<file src="config\Runner.cs.pp" target="content\Runner.cs.pp" />
   </files>
 </package>
