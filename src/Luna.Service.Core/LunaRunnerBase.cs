@@ -17,5 +17,10 @@ namespace Luna.Service
         {
             
         }
+
+        public virtual void Init()
+        {
+
+        }
     }
 }

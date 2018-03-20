@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Luna.Service.Nlog")]
+[assembly: AssemblyTitle("Luna.Service.Hangfire")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Luna.Service.Nlog")]
+[assembly: AssemblyProduct("Luna.Service.Hangfire")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("e2c3e4ed-4c1e-45c9-94dd-58d47ec167a5")]
+[assembly: Guid("7fdf1032-7c4f-446a-b104-501b9be0bd51")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
@@ -31,6 +31,6 @@ using System.Runtime.InteropServices;
 //
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 //通过使用 "*"，如下所示:
+// [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.3.0")]
-//[assembly: AssemblyVersion("1.0.0.0")]
 //[assembly: AssemblyFileVersion("1.0.0.0")]

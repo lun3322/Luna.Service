@@ -6,5 +6,6 @@ namespace Luna.Service
     {
         void Run();
         void Stop();
+        void Init();
     }
 }

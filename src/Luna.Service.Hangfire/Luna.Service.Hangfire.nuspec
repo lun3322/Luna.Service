@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>chenhongbo</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/lun3322/Luna.Service/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/lun3322/Luna.Service</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Luna.Service使用集成hangfire的依赖包</description>
+    <tags>console service</tags>
+  </metadata>
+</package>

@@ -1,7 +1,6 @@
 ﻿using Castle.Facilities.Logging;
 using Castle.Services.Logging.NLogIntegration;
 using Hangfire;
-using Hangfire.Windsor;
 using Topshelf;
 
 namespace Luna.Service.HangFireDemo
@@ -13,9 +12,7 @@ namespace Luna.Service.HangFireDemo
         {
             _starter = Starter.Create<Runner>();
             _starter.Container.AddFacility<LoggingFacility>(f => f.LogUsing<NLogFactory>().WithConfig("NLog.config"));
-            
-
-            JobActivator.Current = new WindsorJobActivator(_starter.Container.Kernel);
+            GlobalConfiguration.Configuration.UseSqlServerStorage("default");
         }
 
         public bool Start(HostControl hostControl)

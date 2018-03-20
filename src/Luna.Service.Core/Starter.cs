@@ -57,6 +57,10 @@ namespace Luna.Service
                     .WithService.Self()
                     .LifestyleTransient()
             );
+
+            Container.Register(
+                Component.For<Starter>().Instance(this).LifestyleSingleton()
+            );
         }
 
         public static Starter Create<T>(StarterOption option = null)
@@ -74,6 +78,7 @@ namespace Luna.Service
                     : NullLogger.Instance;
 
                 var runner = Container.Resolve<IRunner>();
+                runner.Init();
                 runner.Run();
             }
             catch (Exception ex)
