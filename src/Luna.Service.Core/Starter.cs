@@ -28,8 +28,21 @@ namespace Luna.Service
                 }
             };
 
+            RegisterAssembly(GetType().Assembly);
+            RegisterAssembly(runnerType.Assembly);
+
             Container.Register(
-                Classes.FromAssemblyInThisApplication(runnerType.Assembly)
+                Component.For<Starter>().Instance(this).LifestyleSingleton(),
+                Component.For<StarterOption>().Instance(option).LifestyleSingleton()
+            );
+
+            IocManager.Container = Container;
+        }
+
+        private void RegisterAssembly(Assembly assembly)
+        {
+            Container.Register(
+                Classes.FromAssemblyInThisApplication(assembly)
                     .IncludeNonPublicTypes()
                     .BasedOn<ITransientDependency>()
                     .WithServiceAllInterfaces()
@@ -40,7 +53,7 @@ namespace Luna.Service
             );
 
             Container.Register(
-                Classes.FromAssemblyInThisApplication(runnerType.Assembly)
+                Classes.FromAssemblyInThisApplication(assembly)
                     .IncludeNonPublicTypes()
                     .BasedOn<ISingletonDependency>()
                     .If(type => !type.IsGenericTypeDefinition)
@@ -50,20 +63,13 @@ namespace Luna.Service
             );
 
             Container.Register(
-                Classes.FromAssemblyInThisApplication(runnerType.Assembly)
+                Classes.FromAssemblyInThisApplication(assembly)
                     .IncludeNonPublicTypes()
                     .BasedOn<IInterceptor>()
                     .If(type => !type.IsGenericTypeDefinition)
                     .WithService.Self()
                     .LifestyleTransient()
             );
-
-            Container.Register(
-                Component.For<Starter>().Instance(this).LifestyleSingleton(),
-                Component.For<StarterOption>().Instance(option).LifestyleSingleton()
-            );
-
-            IocManager.Container = Container;
         }
 
         public static Starter Create<T>(StarterOption option = null)

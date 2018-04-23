@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using CacheManager.Core;
 using CacheManager.Serialization.Json;
 using Castle.Core.Logging;
+using Luna.Service.Dependency;
 
 namespace Luna.Service.Caching
 {
-    public class LunaCache : ILunaCache
+    public class LunaCache : ILunaCache, ISingletonDependency
     {
         private ConcurrentDictionary<string, object> Caches { get; set; }
         private readonly StarterOption _starterOption;

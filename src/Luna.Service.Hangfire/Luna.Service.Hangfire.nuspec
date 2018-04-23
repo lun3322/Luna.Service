@@ -12,7 +12,7 @@
     <description>Luna.Service使用集成hangfire的依赖包</description>
     <tags>console service</tags>
     <dependencies>
-      <dependency id="Luna.Service" version="1.0.4" />
+      <dependency id="Luna.Service" version="1.0.5" />
     </dependencies>
   </metadata>
 </package>

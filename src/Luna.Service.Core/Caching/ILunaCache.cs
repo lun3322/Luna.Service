@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CacheManager.Core;
-using Luna.Service.Dependency;
 
 namespace Luna.Service.Caching
 {
-    public interface ILunaCache : ISingletonDependency
+    public interface ILunaCache
     {
         ICacheManager<T> GetCacheManager<T>(string name);
     }
