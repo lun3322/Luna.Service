@@ -11,6 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Luna.Service使用Nlog作日志的配置文件和依赖</description>
     <tags>Luna.Service Nlog</tags>
+    <dependencies>
+      <dependency id="Luna.Service" version="1.0.4" />
+    </dependencies>
   </metadata>
   <files>
     <file src="config\readme.txt" target="readme.txt" />

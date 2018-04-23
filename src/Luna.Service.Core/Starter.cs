@@ -59,8 +59,11 @@ namespace Luna.Service
             );
 
             Container.Register(
-                Component.For<Starter>().Instance(this).LifestyleSingleton()
+                Component.For<Starter>().Instance(this).LifestyleSingleton(),
+                Component.For<StarterOption>().Instance(option).LifestyleSingleton()
             );
+
+            IocManager.Container = Container;
         }
 
         public static Starter Create<T>(StarterOption option = null)
